@@ -1,9 +1,13 @@
+import { createBrowserRouter, RouterProvider } from 'react-router-dom'
+import { Dashboard } from './pages/Dashboard'
+
+const router = createBrowserRouter([
+  {
+    path: '/',
+    element: <Dashboard />,
+  },
+])
 
 export function App() {
-
-  return (
-    <div>
-      Hello World!
-    </div>
-  )
+  return <RouterProvider router={router} />
 }
