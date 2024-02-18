@@ -15,7 +15,7 @@ export const Dashboard: React.FC = () => {
 
   return (
     <div>
-      <h1>{userName ? userName : ''}</h1>
+      <h1>{userName}</h1>
       Dashboard
     </div>
   )
