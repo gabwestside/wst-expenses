@@ -1,17 +1,8 @@
 import { useLoaderData } from 'react-router-dom'
-import { fetchData } from '../helpers'
+import { MainLoaderDataProps } from '../_utils/loader'
 
-interface DashboardLoaderDataProps {
-  userName?: string | null
-}
-
-export function dashboardLoader(): DashboardLoaderDataProps {
-  const userName = fetchData('userName')
-  return { userName }
-}
-
-export const Dashboard: React.FC = () => {
-  const { userName } = useLoaderData() as DashboardLoaderDataProps
+export const Dashboard = () => {
+  const { userName } = useLoaderData() as MainLoaderDataProps
 
   return (
     <div>
