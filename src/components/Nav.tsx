@@ -19,7 +19,7 @@ export const Nav: React.FC<NavProps> = ({ userName }) => {
         aria-label='Vá para o Inicio'
       >
         <img src={logoMark} alt='navLogo' height={30} width={30} />
-        <span>Despesas</span>
+        <span>Finanças</span>
       </NavLink>
       {
         userName && (

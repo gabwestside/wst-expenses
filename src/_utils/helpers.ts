@@ -6,6 +6,5 @@ export const fetchData = (key: string): string | null => {
 
 // Delete item
 export const deleteItem = ({ key }: { key: string }): void => {
-  console.log(key)
   localStorage.removeItem(key)
 }
